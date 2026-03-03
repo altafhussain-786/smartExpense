@@ -1,7 +1,7 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Landmark, Link, Mic, Sparkles, Target } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock,Link, Landmark, Mic, Sparkles, Target } from "lucide-react";
 
 export const navLinks = [
-    { name: "Features", link: "#features" },
+    { name: "Features", link: "/features" },
     { name: "How It Works", link: "#how" },
     { name: "Pricing", link: "#pricing" },
     { name: "AI Insights", link: "#ai" },

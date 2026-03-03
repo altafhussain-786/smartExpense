@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "../data/data";
+import { navLinks } from "../../data/data";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,13 +19,13 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.link}
+              to={item.link}
               className="hover:text-orange-600 transition"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="hidden md:flex items-center gap-4">
@@ -44,14 +45,14 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-4">
           {navLinks.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.link}
+              to={item.link}
               className="block hover:text-orange-600"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
 
           <hr />

@@ -1,4 +1,4 @@
-import { plans } from "../data/data"
+import { plans } from "../../data/data"
 
 const PricingPlan = () => {
   return (
@@ -38,7 +38,7 @@ const PricingPlan = () => {
             <span className={`text-base font-medium ${
               plan.popular ? "text-orange-100" : "text-gray-500"
             }`}>
-              {" "} /months
+              {" "} /mo
             </span>
           </p>
 

@@ -1,19 +1,16 @@
-import Navbar from './common/Navbar'
-import Home from './pages/Home'
-import AiInsights from './components/AiInsights'
-import Footer from './common/Footer'
-import FinancialFreedomSteps from './components/FinancialFreedomSteps'
-import PricingPlan from './components/PricingPlan'
-
+import { Route, BrowserRouter as Router, Routes, }  from "react-router-dom"
+import LandingPage from "./pages/LandingPage"
+import Features from "./pages/Features"
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Home />
-      <AiInsights />
-      <FinancialFreedomSteps />
-      <PricingPlan/>
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage/>}/>
+          <Route path="/features" element={<Features/>}/>
+       
+        </Routes>
+      </Router>
     </>
   )
 }
