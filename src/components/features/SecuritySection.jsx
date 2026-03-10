@@ -2,7 +2,7 @@ import { securityCard, securitySection } from "../../data/data"
 
 const SecuritySection = () => {
     return (
-        <div className="w-full bg-gray-100 py-16 px-4">
+        <div className="w-full bg-gray-50 py-16 px-4">
 
             <div className="w-full mx-auto bg-[#e7ded8] rounded-3xl py-14 px-10 md:px-16">
                 {securitySection.map((content, index) => {

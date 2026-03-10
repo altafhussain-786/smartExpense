@@ -6,14 +6,14 @@ import Home from '../components/home/Home'
 import PricingPlan from '../components/home/PricingPlan'
 const LandingPage = () => {
   return (
-    <div>
+    <>
         <Navbar/>
         <Home/>
         <AiInsights/>
         <FinancialFreedomSteps/>
         <PricingPlan/>
         <Footer/>
-    </div>
+    </>
   )
 }
 

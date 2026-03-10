@@ -1,8 +1,8 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock,Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock,Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal } from "lucide-react";
 
 export const navLinks = [
     { name: "Features", link: "/features" },
-    { name: "How It Works", link: "#how" },
+    { name: "How It Works", link: "/how" },
     { name: "Pricing", link: "#pricing" },
     { name: "AI Insights", link: "#ai" },
   ];
@@ -198,3 +198,52 @@ export const securityCard = [
     description : "We never sell your data to third parties.", 
   }
 ]
+// Progress feature data 
+
+export const progressFeatures = {
+  mainTitle : "Build Habits, Not Just Budgets.",
+  mainDescription : "Gamified saving makes financial discipline fun. Track your streaks, earn badges, and level up your financial health.",
+  features :[
+    {
+      icon :Flame,
+      title : "Saving Streaks",
+      description : "Stay within budget for 7 consecutive days to build a streak and earn bonus points."
+    },
+      {
+      icon :Award,
+      title : "Achievement Badges",
+      description : "Unlock 'Rainy Day Hero' or 'Debt Crusher' badges as you reach your financial milestones."
+    }
+  ]
+}
+// progress card data
+export const progressCard = {
+    icon : Medal,
+    lockIcon :Lock, 
+    title : "Your Progress",
+    level: "Lvl 12",
+    day: "15",
+    streak : "Day Streak"
+  }
+  // call to action data
+
+export const callToAction = [
+  {
+    title: "Ready to take control?",
+    description : "Join 50,000+ users who have optimized their finances with the world's most advanced expense tracker."
+  }
+]
+// how its works saction
+// hero section data
+export const heroSection = {
+  icon : Sparkles,
+  description : "The AI-Driven Financial Workflow",
+  features: [{
+    title : "Smart Money",
+    span : "Simplified.",
+    description : "Experience the future of personal finance with our AI-driven workflow that turns natural speech into actionable financial insights. No more tedious manual entries."
+  }]
+}
+
+
+
