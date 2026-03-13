@@ -29,8 +29,7 @@ const Home = () => {
                         src={expensivTracker}
                         alt="Expense Tracker"
                         className="w-64 sm:w-80 md:w-96 xl:w-[480px] h-auto object-contain rounded-2xl shadow-lg w-full max-w-md md:max-w-lg
-      transition-all duration-500 hover:scale-105 hover:shadow-2xl"
-                    />
+                                 transition-all duration-500 hover:scale-105 hover:shadow-2xl"/>
                 </div>
             </div>
         </div>
