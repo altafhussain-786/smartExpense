@@ -1,9 +1,9 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database } from "lucide-react";
 
 export const navLinks = [
   { name: "Features", link: "/features" },
   { name: "How It Works", link: "/how" },
-  { name: "Pricing", link: "#pricing" },
+  { name: "Pricing", link: "/pricing" },
   { name: "AI Insights", link: "#ai" },
 ];
 // AI Insights data
@@ -278,22 +278,65 @@ export const aiProcessingSection = {
     }
   ]
 }
-export const multiAccountSyncSection =  {
-    count: "03",
-    title: "Multi-Account Syncing",
-    description: "SmartExpense securely connects to over 10,000 financial institutions worldwide. Whether it's traditional bank accounts or digital wallets like Apple Pay and PayPal, we keep everything in sync.",
-    icons: [Banknote, CreditCard, Landmark, Wallet]
-  }
+export const multiAccountSyncSection = {
+  count: "03",
+  title: "Multi-Account Syncing",
+  description: "SmartExpense securely connects to over 10,000 financial institutions worldwide. Whether it's traditional bank accounts or digital wallets like Apple Pay and PayPal, we keep everything in sync.",
+  icons: [Banknote, CreditCard, Landmark, Wallet]
+}
 
 export const multiAccountSyncSectionCard = [
   {
-    title : "Security Level",
+    title: "Security Level",
     lockIcon: Lock,
     shiledIcon: Shield,
     description1: "AES-256 Bank-Level Encryption",
     description2: "SOC2 Type II Compliant Infrastructure"
   }
 ]
+export const gamificationSection = {
+  count: "04",
+  title: "Insights & Gamification",
+  description: "Finance doesn't have to be boring. SmartExpense turns your savings goals into a journey with rewards, streaks, and milestone badges.",
+  features: [
+    {
+      icon: Award,
+      title: "Badges",
+      description: "Earn rewards for meeting goals."
+    },
+    {
+      icon: TrendingUp,
+      title: "Streaks",
+      description: "Stay consistent to win big."
+    },
+  ]
+}
+export const techStackSection = {
+  title: "Built with Modern Tech",
+  icons: [
+    {
+      icon: Cloud,
+      title: "mern stack"
+    },
+    {
+      icon: BrainCircuit,
+      title: "openai api"
+    },
+    {
+      icon: Mic,
+      title: "web speech api"
+    },
+    {
+      icon: Database,
+      title: "mongodb"
+    },
+  ]
+}
+export const catSection = {
+  title: "Ready to master your financial future?",
+  button1: "Start Your Joureny",
+  button2: "Talk to Sales"
+}
 
 
 
