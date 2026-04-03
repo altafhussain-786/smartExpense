@@ -1,20 +1,23 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Wallet, X } from "lucide-react";
 import { navLinks } from "../../data/data";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  {navLinks.map((item, index) =>(
-    <div key={index}>{item.name}</div>
-  ))}
+  {
+    navLinks.map((item, index) => (
+      <div key={index}>{item.name}</div>
+    ))
+  }
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <span className="text-2xl"></span>
+          <span className="text-2xl">{<Wallet size={30} className="text-orange-600 hover:text-orange-700" />}</span>
           <h1 className="text-xl font-bold text-orange-600">
-            SmartExpense
+            <Link to="/">
+              SmartExpense
+            </Link>
           </h1>
         </div>
         <div className="hidden md:flex items-center gap-8">

@@ -1,5 +1,3 @@
-import Footer from "../components/common/Footer";
-import Navbar from "../components/common/Navbar";
 import AIProcessingSection from "../components/howItWorks/AIProcessingSection";
 import CTASection from "../components/howItWorks/CTASection";
 import GamificationSection from "../components/howItWorks/GamificationSection";
@@ -10,15 +8,13 @@ import VoiceExpenseSection from "../components/howItWorks/VoiceExpenseSection";
 
 const HowItWork = () => {
   return <>
-  <Navbar/>
-  <HeroSection/>
-  <VoiceExpenseSection/>
-  <AIProcessingSection/>
-  <MultiAccountSyncSection/>
-  <GamificationSection/>
-  <TechStackSection/>
-  <CTASection/>
-  <Footer/>
+    <HeroSection />
+    <VoiceExpenseSection />
+    <AIProcessingSection />
+    <MultiAccountSyncSection />
+    <GamificationSection />
+    <TechStackSection />
+    <CTASection />
   </>
 };
 

@@ -1,11 +1,14 @@
-import React from "react";
-import Navbar from "../components/common/Navbar";
-import Footer from "../components/common/Footer";
+import PricingHero from "../components/pricing/PricingHero";
+import PricingCard from "../components/pricing/PricingCard";
+import PricingFAQSection from "../components/pricing/PricingFAQSection";
+import CTASection from "../components/pricing/CTASection";
 
 const Pricing = () => {
   return <>
-    <Navbar/>
-    <Footer/>
+    <PricingHero />
+    <PricingCard />
+    <PricingFAQSection />
+    <CTASection />
   </>;
 };
 

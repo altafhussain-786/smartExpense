@@ -1,10 +1,10 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell } from "lucide-react";
 
 export const navLinks = [
   { name: "Features", link: "/features" },
-  { name: "How It Works", link: "/how" },
+  { name: "How It Works", link: "/howitwork" },
   { name: "Pricing", link: "/pricing" },
-  { name: "AI Insights", link: "#ai" },
+  { name: "AI Insights", link: "/aiinsights" },
 ];
 // AI Insights data
 export const aiAinsights = [
@@ -337,6 +337,218 @@ export const catSection = {
   button1: "Start Your Joureny",
   button2: "Talk to Sales"
 }
+//Pricing section data
+export const pricingHero = [
+  {
+    title: "Choose the Plan That Fits Your Financial Goals",
+    description: "Flexible pricing for teams and individuals of all sizes. Save 20% with annual billing."
+  }
+]
+// pricing card data 
+export const pricingCard = [
+  {
+    title: "Free",
+    price: 0,
+    description: "Perfect for individuals starting their journey.",
+    buttonText: "Start for Free",
+    features: [
+      "Basic transaction tracking",
+      "Up to 50 transactions /mo",
+      "1 Linked account",
+      "Email support",
+    ],
+  },
+  {
+    title: "Pro",
+    price: 29,
+    description: "Advanced tools for serious financial management.",
+    buttonText: "Get Started",
+    features: [
+      "AI-powered categorization",
+      "Unlimited transactions",
+      "Up to 10 Linked accounts",
+      "Voice-activated logging",
+      "Priority 24/7 support",
+    ],
+  },
+  {
+    title: "Enterprise",
+    price: 99,
+    description: "Ultimate power for complex business needs.",
+    buttonText: "Contact Sales",
+    features: [
+      "Custom AI models",
+      "Unlimited everything",
+      "Dedicated Success Manager",
+      "SSO & Enterprise Security",
+      "White-label reporting",
+    ],
+  },
+]
+// pricing FAQ data
 
+export const pricingFAQSection = {
+  mainTitle: "Frequently Asked Questions",
+  features: [
+    {
+      title: "How secure is my financial data?",
+      description: "We use bank-level AES-256 encryption for all data at rest and TLS for data in transit. Your security is our highest priority."
+    },
+    {
+      title: "Can I cancel my subscription at any time?",
+      description: "Yes, you can cancel your subscription from your account settings at any time. You'll retain access until the end of your billing cycle."
+    },
+    {
+      title: "Does the AI feature store my personal habits?",
+      description: "Our AI categorization is designed for processing, not profiling. We do not sell your data to third parties."
+    },
+    {
+      title: "What happens if I exceed my transaction limit?",
+      description: "We'll notify you when you reach 90% of your limit. You can easily upgrade to the Pro plan for unlimited tracking."
+    },
+  ]
+}
+export const ctaSction = [
+  {
+    title: "Ready to take control of your spending?",
+    subtitle: "Join over 50,000 users managing their finances with AI-powered insights.",
+    buttons: [
+      {
+        text: "Start 14-Day Free Trial",
+        primary: true,
+      },
+      {
+        text: "Schedule a Demo",
+        primary: false,
+      }
+    ]
+  }
+]
+//AI Insights section data 
 
+ export const aiInsightsSection = {
+  mainTitle: "AI Smart Insights",
+  subtitle: "Data-driven financial forecasting and personalized tips",
 
+  chartData: [
+    { month: "Jan", expenses: 300 },
+    { month: "Feb", expenses: 500 },
+    { month: "Mar", expenses: 450 },
+    { month: "Apr", expenses: 200 },
+    { month: "May", expenses: 650 },
+    { month: "Jun", expenses: 400 },
+  ],
+
+  insightsCard: {
+    tag: "FORECAST",
+    title: "Monthly Spending Prediction",
+    description:
+      "Based on your current habits, you are projected to spend $3,450 this month.",
+
+    amount: "$3,450",
+
+    breakdown: [
+      { label: "Fixed", percentage: 60, color: "orange" },
+      { label: "Variable", percentage: 30, color: "dark-orange" },
+      { label: "Savings", percentage: 10, color: "gray" },
+    ],
+
+    buttonText: "View Detailed Analysis",
+  },
+};
+// recent insights data card
+export const recentInsightsCardData = {
+  mainTitle: "Recent Insights",  
+ features: [
+  {
+    title: "Overspending Alert",
+    description: "Food & Dining is 15% higher than your 3-month average.",
+    icon: AlertTriangle,
+  },
+  {
+    title: "Saving Opportunity",
+    description: "Cancel unused Netflix subscription.",
+    icon: PiggyBank,
+  },
+  {
+    title: "Budget Master Progress",
+    description: "Only 2 more days...",
+    icon: Trophy,
+  }
+]
+};
+export const financialAssistantData = {
+  mainIcon: BriefcaseBusiness,
+  title: "Financial AI Assistant",
+  subtitle: "Ask me anything about your finances",
+  subIcon: Play,
+  messages: [
+    {
+      type: "bot",
+      text: "Hello! I can help you analyze your spending, find savings, or plan for a big purchase. What's on your mind today?"
+    },
+    {
+      type: "user",
+      text: "Can I afford a $2,000 vacation next month?"
+    },
+  ],
+  suggestions: [
+    "Top spending categories",
+    "How to save more?",
+    "Analyze my utilities"
+  ]
+};
+// sidebar dashboard data
+export const sidebarData = [
+  {
+    title: "Dashboard",
+    icon: LayoutDashboard,
+    active: true,
+  },
+  {
+    title: "Transactions",
+    icon: ArrowLeftRight,
+  },
+  {
+    title: "Budget",
+    icon: Wallet,
+  },
+  {
+    title: "Accounts",
+    icon: Landmark,
+  },
+  {
+    title: "Reports",
+    icon: BarChart3,
+  },
+  {
+    title: "AI Insights",
+    icon: Sparkles,
+  },
+];
+
+export const bottomMenu = [
+  {
+    title: "Settings",
+    icon: Settings,
+  },
+];
+// dashboard navbar data
+export const dashboardNavbarData = {
+  search: {
+    placeholder: "Search transactions, bills...",
+    icon: Search,
+  },
+  actions: [
+    {
+      type: "notification",
+      icon: Bell,
+      count: 2,
+    },
+  ],
+  user: {
+    name: "Alex Rivers",
+    plan: "Premium Plan",
+    avatar: "https://i.pravatar.cc/40",
+  },
+};
