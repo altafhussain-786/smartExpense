@@ -426,7 +426,7 @@ export const ctaSction = [
 ]
 //AI Insights section data 
 
- export const aiInsightsSection = {
+export const aiInsightsSection = {
   mainTitle: "AI Smart Insights",
   subtitle: "Data-driven financial forecasting and personalized tips",
 
@@ -458,24 +458,24 @@ export const ctaSction = [
 };
 // recent insights data card
 export const recentInsightsCardData = {
-  mainTitle: "Recent Insights",  
- features: [
-  {
-    title: "Overspending Alert",
-    description: "Food & Dining is 15% higher than your 3-month average.",
-    icon: AlertTriangle,
-  },
-  {
-    title: "Saving Opportunity",
-    description: "Cancel unused Netflix subscription.",
-    icon: PiggyBank,
-  },
-  {
-    title: "Budget Master Progress",
-    description: "Only 2 more days...",
-    icon: Trophy,
-  }
-]
+  mainTitle: "Recent Insights",
+  features: [
+    {
+      title: "Overspending Alert",
+      description: "Food & Dining is 15% higher than your 3-month average.",
+      icon: AlertTriangle,
+    },
+    {
+      title: "Saving Opportunity",
+      description: "Cancel unused Netflix subscription.",
+      icon: PiggyBank,
+    },
+    {
+      title: "Budget Master Progress",
+      description: "Only 2 more days...",
+      icon: Trophy,
+    }
+  ]
 };
 export const financialAssistantData = {
   mainIcon: BriefcaseBusiness,
@@ -535,6 +535,7 @@ export const bottomMenu = [
 ];
 // dashboard navbar data
 export const dashboardNavbarData = {
+
   search: {
     placeholder: "Search transactions, bills...",
     icon: Search,
@@ -552,3 +553,7 @@ export const dashboardNavbarData = {
     avatar: "https://i.pravatar.cc/40",
   },
 };
+// main dashboard data
+export const dashboardData = {
+  
+}
