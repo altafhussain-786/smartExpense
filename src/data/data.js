@@ -1,4 +1,4 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils } from "lucide-react";
 
 export const navLinks = [
   { name: "Features", link: "/features" },
@@ -503,6 +503,7 @@ export const sidebarData = [
   {
     title: "Dashboard",
     icon: LayoutDashboard,
+    path: "/dashboard",
     active: true,
   },
   {
@@ -554,6 +555,94 @@ export const dashboardNavbarData = {
   },
 };
 // main dashboard data
-export const dashboardData = {
-  
-}
+export const statsData = [
+  {
+    title: "Total Balance",
+    amount: "$12,450.00",
+    change: "+2.4%",
+    icon: Wallet,
+    color: "orange",
+  },
+  {
+    title: "Monthly Income",
+    amount: "$5,200.00",
+    change: "+8.1%",
+    icon: TrendingUp,
+    color: "green",
+  },
+  {
+    title: "Monthly Expense",
+    amount: "$3,120.00",
+    change: "-5.1%",
+    icon: TrendingDown,
+    color: "red",
+  },
+  {
+    title: "Savings Progress",
+    amount: "65%",
+    change: "Target",
+    icon: Target,
+    color: "orange",
+  },
+];
+// financial analytics data
+export const analyticsData = {
+  monthlyTrend: [
+    { month: "Jan", value: 200 },
+    { month: "Feb", value: 400 },
+    { month: "Mar", value: 500 },
+    { month: "Apr", value: 350 },
+    { month: "May", value: 800 },
+    { month: "Jun", value: 600 },
+  ],
+
+  categorySpending: [
+    { name: "Housing", value: 45, color: "orange" },
+    { name: "Food & Dining", value: 25, color: "green" },
+    { name: "Others", value: 30, color: "gray" },
+  ],
+
+  totalSpent: "$3,120",
+};
+// recent transactions data
+export const recentTransactionsData = {
+  title: "Recent Transactions",
+  buttonText: "View All",
+  transactions: [
+    {
+      icon: ShoppingBag,
+      name: "Apple Store",
+      description: "MacBook Pro M3",
+      category: "Electronics",
+      date: "Oct 24, 2023",
+      amount: "-$2,499.00",
+      status: "Completed",
+      amountColor: "text-red-500",
+      statusColor: "text-green-500",
+    },
+
+    {
+      icon: Utensils,
+      name: "The Greenhouse",
+      description: "Business Lunch",
+      category: "Food",
+      date: "Oct 23, 2023",
+      amount: "-$124.50",
+      status: "Pending",
+      amountColor: "text-red-400",
+      statusColor: "text-orange-400",
+    },
+
+    {
+      icon: "income",
+      name: "Acme Corp",
+      description: "Monthly Salary",
+      category: "Income",
+      date: "Oct 20, 2023",
+      amount: "+$5,200.00",
+      status: "Completed",
+      amountColor: "text-green-500",
+      statusColor: "text-green-500",
+    },
+  ],
+};
