@@ -114,13 +114,12 @@ const FinancialAnalytics = () => {
                             ></span>
                             <span>{item.name}</span>
                         </div>
-
                         <span className="font-semibold">{item.value}%</span>
                     </div>
                 ))}
             </div>
         </div>
-    </div>
+    </div>;
 };
 
 export default FinancialAnalytics;

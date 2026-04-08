@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import DashboardNavbar from "../common/DashboardNavbar";
 import SidebarDashboard from "../common/SidebarDashboard";
 
-const DashboardLaoyt = () => {
+const DashboardLayout = () => {
     return (
         <div className="flex h-screen overflow-hidden bg-gray-50">
             <SidebarDashboard />
@@ -16,4 +16,4 @@ const DashboardLaoyt = () => {
     );
 };
 
-export default DashboardLaoyt;
+export default DashboardLayout;

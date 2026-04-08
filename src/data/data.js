@@ -1,4 +1,4 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2 } from "lucide-react";
 
 export const navLinks = [
   { name: "Features", link: "/features" },
@@ -509,6 +509,7 @@ export const sidebarData = [
   {
     title: "Transactions",
     icon: ArrowLeftRight,
+    path: "/transactions",
   },
   {
     title: "Budget",
@@ -634,7 +635,7 @@ export const recentTransactionsData = {
     },
 
     {
-      icon: "income",
+      icon: Wallet2,
       name: "Acme Corp",
       description: "Monthly Salary",
       category: "Income",
@@ -645,4 +646,118 @@ export const recentTransactionsData = {
       statusColor: "text-green-500",
     },
   ],
+};
+// transactions overview data
+export const transactionsOverviewData = {
+  title: "Transactions",
+  subtitle: "Manage and track your expense history",
+  stats: [
+    {
+      title: "Total Transactions",
+      value: 1284,
+      growth: "+5.2%",
+      icon: Receipt
+    },
+    {
+      title: "Monthly Total",
+      value: "$4,250.00",
+      growth: "+12.4%",
+      icon: Calendar
+    },
+    {
+      title: "Recent Activity",
+      value: "12 Today",
+      growth: "-2.1%",
+      icon: RefreshCcw
+    }
+  ],
+
+  actions: [
+    {
+      text: "Export CSV",
+      icon: Download,
+      variant: "outline",
+      action: () => console.log("Export CSV")
+    },
+    {
+      text: "Add Transaction",
+      icon: Plus,
+      variant: "primary",
+      action: () => console.log("Add Transaction")
+    }
+  ]
+};
+// transaction table data 
+export const transactionHistoryData = {
+  filters: {
+    categories: [
+      "All Categories",
+      "Food & Dining",
+      "Transportation",
+      "Income",
+      "Software SaaS"
+    ],
+    accounts: [
+      "All Accounts",
+      "Visa **** 4242",
+      "Chase Business",
+      "Amex Platinum"
+    ],
+    dateRanges: [
+      "Last 7 Days",
+      "Last 30 Days",
+      "Last 3 Months"
+    ]
+  },
+
+  transactions: [
+    {
+      id: 1,
+      date: "Oct 24, 2023",
+      merchant: "Starbucks Coffee",
+      icon: Coffee,
+      category: "Food & Dining",
+      account: "Visa **** 4242",
+      amount: "-$12.50",
+      status: "Completed",
+      actions: [Eye, Pencil, Trash2]
+    },
+    {
+      id: 2,
+      date: "Oct 23, 2023",
+      merchant: "Uber Technologies",
+      icon: Car,
+      category: "Transportation",
+      account: "Visa **** 4242",
+      amount: "-$24.80",
+      status: "Completed",
+      actions: [Eye, Pencil, Trash2]
+    },
+    {
+      id: 3,
+      date: "Oct 22, 2023",
+      merchant: "Client Payment - Acme Corp",
+      icon: Wallet,
+      category: "Income",
+      account: "Chase Business",
+      amount: "+$2,450.00",
+      status: "Pending",
+      actions: [Eye, Pencil, Trash2]
+    },
+    {
+      id: 4,
+      date: "Oct 22, 2023",
+      merchant: "Adobe Creative Cloud",
+      icon: Monitor,
+      category: "Software SaaS",
+      account: "Amex Platinum",
+      amount: "-$52.99",
+      status: "Completed",
+      actions: [Eye, Pencil, Trash2]
+    }
+  ],
+  pagination: {
+    currentPage: 1,
+    totalPages: 3
+  }
 };
