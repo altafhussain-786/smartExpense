@@ -1,4 +1,4 @@
-import { steps } from "../data/data"
+import { steps } from "../../data/data"
 const FinancialFreedomSteps = () => {
   return (
     <section className="py-24 bg-gray-100 mb-10">

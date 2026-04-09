@@ -1,5 +1,5 @@
 import { SquarePlay } from "lucide-react"
-
+import expensivTracker from '../../assets/images/expense-tracker.png'
 const Home = () => {
     return (
         <div className="min-h-screen flex items-center bg-gray-100 mb-10">
@@ -26,10 +26,10 @@ const Home = () => {
                 </div>
                 <div className="w-full md:w-1/2 flex items-center justify-center">
                     <img
-                        src="/src/assets/expense-tracker.png"
+                        src={expensivTracker}
                         alt="Expense Tracker"
-                        className="w-64 sm:w-80 md:w-96 xl:w-[480px] h-auto object-contain"
-                    />
+                        className="w-64 sm:w-80 md:w-96 xl:w-[480px] h-auto object-contain rounded-2xl shadow-lg w-full max-w-md md:max-w-lg
+                                 transition-all duration-500 hover:scale-105 hover:shadow-2xl"/>
                 </div>
             </div>
         </div>
