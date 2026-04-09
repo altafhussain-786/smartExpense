@@ -1,4 +1,4 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2 } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2, ShoppingCart, Home, Lightbulb } from "lucide-react";
 
 export const navLinks = [
   { name: "Features", link: "/features" },
@@ -509,11 +509,12 @@ export const sidebarData = [
   {
     title: "Transactions",
     icon: ArrowLeftRight,
-    path: "/transactions",
+    path: "/dashboard/transactions",
   },
   {
     title: "Budget",
     icon: Wallet,
+    path: "/dashboard/budget",
   },
   {
     title: "Accounts",
@@ -760,4 +761,129 @@ export const transactionHistoryData = {
     currentPage: 1,
     totalPages: 3
   }
+};
+// budget overview data
+export const budgetCardData = {
+  title: "Budget Management",
+  subtitle: "Plan your future with AI-driven predictive insights.",
+
+  headerActions: {
+    period: {
+      label: "Monthly (Oct)",
+      icon: Calendar,
+    },
+    button: {
+      text: "Set New Budget",
+      icon: Plus,
+    },
+  },
+
+  cards: [
+    {
+      title: "Total Monthly Budget",
+      value: "$5,000",
+      icon: Wallet,
+      change: "+0% from last month",
+      changeColor: "text-green-500",
+      bgColor: "bg-orange-100",
+      iconColor: "text-orange-600",
+    },
+    {
+      title: "Total Spent",
+      value: "$3,200",
+      icon: ShoppingCart,
+      change: "64% of total",
+      changeColor: "text-gray-400",
+      bgColor: "bg-gray-100",
+      iconColor: "text-gray-600",
+    },
+    {
+      title: "Remaining Balance",
+      value: "$1,800",
+      icon: PiggyBank,
+      change: "36% left",
+      changeColor: "text-orange-500",
+      bgColor: "bg-green-100",
+      iconColor: "text-green-600",
+    },
+  ],
+};
+// budget insights section data
+export const budgetInsightsData = {
+  title: "Category-Wise Budgets",
+  actionText: "View All Categories",
+
+  categories: [
+    {
+      name: "Food & Dining",
+      icon: Utensils,
+      spent: 800,
+      total: 1000,
+      percent: 80,
+      status: "Warning",
+      statusColor: "bg-orange-100 text-orange-600",
+      barColor: "bg-orange-500",
+    },
+    {
+      name: "Transportation",
+      icon: Car,
+      spent: 200,
+      total: 500,
+      percent: 40,
+      status: "On Track",
+      statusColor: "bg-green-100 text-green-600",
+      barColor: "bg-blue-500",
+    },
+    {
+      name: "Shopping",
+      icon: ShoppingBag,
+      spent: 1100,
+      total: 1000,
+      percent: 110,
+      status: "Over Budget",
+      statusColor: "bg-red-100 text-red-600",
+      barColor: "bg-red-500",
+    },
+    {
+      name: "Housing",
+      icon: Home,
+      spent: 1500,
+      total: 1500,
+      percent: 100,
+      status: "Settled",
+      statusColor: "bg-gray-200 text-gray-600",
+      barColor: "bg-gray-400",
+    },
+  ],
+
+  insights: [
+    {
+      text: "You've used 85% of your Dining budget. Likely to exceed by $150.",
+    },
+    {
+      text: "You're 20% under budget in Transportation. Great job!",
+    },
+    {
+      text: "AI suggests moving $100 from Utilities to Shopping.",
+    },
+  ],
+
+  buttonText: "Optimize My Budget",
+
+  bills: [
+    {
+      name: "Netflix",
+      date: "Oct 24, 2023",
+      amount: "$15.99",
+      icon: Calendar,
+      color: "bg-red-100 text-red-500",
+    },
+    {
+      name: "Electricity Bill",
+      date: "Oct 26, 2023",
+      amount: "$84.50",
+      icon: Lightbulb,
+      color: "bg-green-100 text-green-600",
+    },
+  ],
 };

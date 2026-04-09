@@ -8,6 +8,7 @@ import Layout from "./components/layout/Layout"
 import MainDashboard from "./pages/MainDashboard"
 import TransactionsOverview from "./pages/TransactionsOverview"
 import DashboardLayout from "./components/dashboardLayout/DashboardLayout"
+import BudgetOverview from "./pages/BudgetOverview"
 const App = () => {
   return (
     <>
@@ -21,8 +22,9 @@ const App = () => {
             <Route path="/aiinsights" element={<AIInsights />} />
           </Route>
           <Route path="/" element={<DashboardLayout />}>
-            <Route path="/dashboard" element={<MainDashboard />} />
-            <Route path="/transactions" element={<TransactionsOverview />} />
+            <Route path="dashboard" element={<MainDashboard />} />
+            <Route path="dashboard/transactions" element={<TransactionsOverview />} />
+            <Route path="dashboard/budget" element={<BudgetOverview />} />
           </Route>
         </Routes>
       </Router>

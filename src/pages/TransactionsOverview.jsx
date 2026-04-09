@@ -3,8 +3,8 @@ import TransactionTable from "../components/dashboard/TransactionsOverview/Trans
 
 const TransactionsOverview = () => {
   return <>
-        <TransactionsCard/>
-        <TransactionTable/>
+    <TransactionsCard />
+    <TransactionTable />
   </>;
 };
 
