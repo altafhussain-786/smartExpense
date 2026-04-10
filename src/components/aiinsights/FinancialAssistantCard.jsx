@@ -1,4 +1,4 @@
-import { financialAssistantData } from "../../data/data";
+import { financialAssistantData } from "../../data";
 
 const FinancialAssistantCard = () => {
     const Icon = financialAssistantData.mainIcon;

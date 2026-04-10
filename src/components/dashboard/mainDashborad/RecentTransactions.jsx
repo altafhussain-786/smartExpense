@@ -1,4 +1,4 @@
-import { recentTransactionsData } from "../../../data/data";
+import { recentTransactionsData } from "../../../data";
 
 const RecentTransactions = () => {
     return <div className="bg-white rounded-2xl shadow-md p-5 w-full transition-all duration-300 hover:shadow-lg">

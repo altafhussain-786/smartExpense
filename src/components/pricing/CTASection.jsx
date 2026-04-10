@@ -1,4 +1,4 @@
-import { ctaSction } from "../../data/data";
+import { ctaSction } from "../../data";
 
 const CTASection = () => {
     return <div className="px-4 py-12 bg-gray-200">

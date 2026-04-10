@@ -1,4 +1,4 @@
-import { pricingCard } from "../../data/data";
+import { pricingCard } from "../../data";
 import { Check } from "lucide-react";
 
 const PricingCard = () => {

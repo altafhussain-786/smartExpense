@@ -1,4 +1,4 @@
-import { pricingHero } from "../../data/data";
+import { pricingHero } from "../../data";
 
 const PricingHero = () => {
     return <div className="py-16 px-4 bg-gray-50">

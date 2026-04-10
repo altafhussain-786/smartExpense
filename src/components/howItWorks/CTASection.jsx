@@ -1,5 +1,5 @@
 import React from "react";
-import { catSection } from "../../data/data";
+import { catSection } from "../../data";
 
 const CTASection = () => {
   return <div className="bg-[#f7eeea] py-16 px-4 sm:px-6 lg:px-8 text-center">

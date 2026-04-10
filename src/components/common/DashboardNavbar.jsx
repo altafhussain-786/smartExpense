@@ -1,4 +1,4 @@
-import { dashboardNavbarData } from "../../data/data";
+import { dashboardNavbarData } from "../../data";
 
 const DashboardNavbar = () => {
     const SearchIcon = dashboardNavbarData.search.icon;

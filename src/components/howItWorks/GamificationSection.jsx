@@ -1,5 +1,5 @@
 import gamification from "../../assets/images/insights-gamification.png"
-import { gamificationSection } from "../../data/data";
+import { gamificationSection } from "../../data";
 const GamificationSection = () => {
     return <div className="w-full bg-[#f8f6f6] py-20 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">

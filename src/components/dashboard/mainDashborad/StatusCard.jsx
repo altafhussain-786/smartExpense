@@ -1,4 +1,4 @@
-import { statsData } from "../../../data/data";
+import { statsData } from "../../../data";
 
 const StatusCard = () => {
     return <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-3">

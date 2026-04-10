@@ -1,8 +1,8 @@
 import AIInsightsHeroSection from "../components/aiInsights/AIInsightsHeroSection";
-const AIInsights = () => {
+const DashboardAiInsights = () => {
   return <>
-    <AIInsightsHeroSection />
+  <AIInsightsHeroSection/>
   </>;
 };
 
-export default AIInsights;
+export default DashboardAiInsights;

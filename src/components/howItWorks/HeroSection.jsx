@@ -1,4 +1,4 @@
-import { heroSection } from "../../data/data";
+import { heroSection } from "../../data";
 import smartMoneyInsights from "../../assets/images/smart-money-insights.png"
 const HeroSection = () => {
     const Icon = heroSection.icon;

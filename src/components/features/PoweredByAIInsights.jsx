@@ -1,4 +1,4 @@
-import { poweredByAiInsights } from "../../data/data"
+import { poweredByAiInsights } from "../../data"
 
 const PoweredByAIInsights = () => {
     return (

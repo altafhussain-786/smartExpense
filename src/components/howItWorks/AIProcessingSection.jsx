@@ -1,4 +1,4 @@
-import { aiProcessingSection } from "../../data/data";
+import { aiProcessingSection } from "../../data";
 
 const AIProcessingSection = () => {
     return <div className="w-full bg-[#f7eeea] py-20">

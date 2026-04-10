@@ -1,4 +1,4 @@
-import { callToAction } from "../../data/data";
+import { callToAction } from "../../data";
 
 const CallToAction = () => {
     return <section className="flex justify-center px-6 py-12">

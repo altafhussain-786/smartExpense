@@ -1,4 +1,4 @@
-import { transactionsOverviewData } from "../../../data/data";
+import { transactionsOverviewData } from "../../../data";
 
 const TransactionsCard = () => {
   return <div className="p-4 md:p-6 space-y-6">
@@ -19,7 +19,7 @@ const TransactionsCard = () => {
           return (
             <button
               key={index}
-              onClick={item.action} // ✅ FIX (no function call here)
+              onClick={item.action}
               className={`
                   flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium
                   transition-all duration-300 ease-in-out

@@ -1,4 +1,4 @@
-import { plans } from "../../data/data"
+import { plans } from "../../data"
 
 const PricingPlan = () => {
   return (

@@ -1,4 +1,4 @@
-import { aiAinsights } from '../../data/data'
+import { aiAinsights } from '../../data'
 const AiInsights = () => {
   return (
     <div className="py-24 bg-gradient-to-b from-gray-50 to-white">

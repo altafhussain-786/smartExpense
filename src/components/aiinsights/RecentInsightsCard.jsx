@@ -1,4 +1,4 @@
-import { recentInsightsCardData } from "../../data/data";
+import { recentInsightsCardData } from "../../data";
 
 const RecentInsightsCard = () => {
   return <div className="w-full rounded-2xl bg-[#f8f6f6] p-4 md:p-6">
