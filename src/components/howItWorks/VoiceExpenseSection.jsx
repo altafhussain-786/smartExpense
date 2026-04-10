@@ -1,4 +1,4 @@
-import { voiceExpenseSection } from "../../data/data";
+import { voiceExpenseSection } from "../../data";
 
 const VoiceExpenseSection = () => {
     const Icon = voiceExpenseSection.micIcon;

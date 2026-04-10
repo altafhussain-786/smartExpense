@@ -1,4 +1,5 @@
-import { analyticsData } from "../../../data/data";
+import TrendAnalyticsVave from "../../../assets/icon/TrendAnalyticsVave";
+import { analyticsData } from "../../../data";
 
 const FinancialAnalytics = () => {
     return <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
@@ -19,28 +20,7 @@ const FinancialAnalytics = () => {
                 </span>
             </div>
             <div className="w-full h-64 relative">
-
-                <svg viewBox="0 0 600 220" className="w-full h-full">
-                    <path
-                        d="M20 180 
-             C100 150, 150 90, 220 80 
-             C300 70, 340 150, 400 120
-             C470 80, 500 20, 560 90
-             L560 220 L20 220 Z"
-                        fill="#f97316"
-                        opacity="0.08"
-                    />
-                    <path
-                        d="M20 180 
-             C100 150, 150 90, 220 80 
-             C300 70, 340 150, 400 120
-             C470 80, 500 20, 560 90"
-                        fill="none"
-                        stroke="#f97316"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                    />
-                </svg>
+                <TrendAnalyticsVave/>
                 <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 text-xs text-gray-400 font-medium">
                     <span>JAN</span>
                     <span>FEB</span>

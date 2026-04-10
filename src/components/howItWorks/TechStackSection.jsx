@@ -1,4 +1,4 @@
-import { techStackSection } from "../../data/data";
+import { techStackSection } from "../../data";
 const TechStackSection = () => {
     return <div className="w-full bg-[#0b1b36] py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">

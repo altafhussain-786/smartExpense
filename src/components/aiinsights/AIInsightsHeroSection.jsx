@@ -1,4 +1,4 @@
-import { aiInsightsSection } from "../../data/data";
+import { aiInsightsSection } from "../../data";
 import FinancialAssistantCard from "./FinancialAssistantCard";
 import RecentInsightsCard from "./RecentInsightsCard";
 

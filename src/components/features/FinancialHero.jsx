@@ -1,7 +1,6 @@
-import React from 'react'
-import { financialCards, financialContent} from '../../data/data'
+import { financialCards, financialContent} from '../../data'
 
-const FinancialDashboard = () => {
+const FinancialHero = () => {
     return (
         <div className='flex flex-col lg:flex-row items-center justify-between gap-12 px-6 lg:px-16 py-16 bg-[#0b1324] text-white'>
             <div className='max-w-xl'>
@@ -37,4 +36,4 @@ const FinancialDashboard = () => {
     )
 }
 
-export default FinancialDashboard
+export default FinancialHero;

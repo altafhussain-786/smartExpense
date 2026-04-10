@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { bottomMenu, sidebarData } from "../../data/data";
+import { bottomMenu, sidebarData } from "../../data";
 
 const SidebarDashboard = () => {
   const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import { progressCard, progressFeatures } from "../../data/data"
+import { progressCard, progressFeatures } from "../../data"
 const ProgressFeature = () => {
     const AvardIcon = progressCard.icon;
     const LockIcon = progressCard.lockIcon;

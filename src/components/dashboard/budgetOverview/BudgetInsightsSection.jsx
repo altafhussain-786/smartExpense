@@ -1,4 +1,4 @@
-import { budgetInsightsData } from "../../../data/data";
+import { budgetInsightsData } from "../../../data";
 
 const BudgetInsightsSection = () => {
     return <div className="p-4 md:p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">

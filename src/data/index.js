@@ -1,10 +1,10 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2, ShoppingCart, Home, Lightbulb } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2, ShoppingCart, Home, Lightbulb, PlusCircle, ArrowRightLeft, AlertCircle, Smartphone, ArrowDownLeft, Save, ArrowDownCircle, Percent, BanIcon, DollarSign, CheckCircle, Brain } from "lucide-react";
 
 export const navLinks = [
   { name: "Features", link: "/features" },
   { name: "How It Works", link: "/howitwork" },
   { name: "Pricing", link: "/pricing" },
-  { name: "AI Insights", link: "/aiinsights" },
+  { name: "AI Insights", link: "/ai-insights" },
 ];
 // AI Insights data
 export const aiAinsights = [
@@ -519,14 +519,17 @@ export const sidebarData = [
   {
     title: "Accounts",
     icon: Landmark,
+    path: "/dashboard/account",
   },
   {
     title: "Reports",
     icon: BarChart3,
+    path: "/dashboard/reports",
   },
   {
     title: "AI Insights",
     icon: Sparkles,
+    path: "/dashboard/aiInsights",
   },
 ];
 
@@ -886,4 +889,206 @@ export const budgetInsightsData = {
       color: "bg-green-100 text-green-600",
     },
   ],
+};
+// account overview data
+export const financeCardData = {
+  balanceCard: {
+    title: "Total Combined Balance",
+    amount: "$142,850.42",
+    buttons: [
+      {
+        text: "Add New Account",
+        icon: PlusCircle,
+      },
+      {
+        text: "Transfer Funds",
+        icon: ArrowRightLeft,
+      },
+    ],
+  },
+
+  optimizationCard: {
+    title: "AI Optimization Tip",
+    icon: AlertCircle,
+    heading: "For your upcoming property tax bill",
+    description:
+      "tax 20%? We suggest using your Amex Gold. You'll earn 4x points on this category, equivalent to $68 in travel rewards.",
+    action: "View Suggested Action",
+  },
+};
+// account overview card data
+export const accountsData = {
+  title: "Your Accounts",
+  action: "Manage All",
+
+  accounts: [
+    {
+      icon: Wallet,
+      name: "Cash Wallet",
+      amount: "$1,240.00",
+      badge: "LIQUID",
+      badgeColor: "text-blue-500",
+      footerLeft: "Grocery Store",
+      footerRight: "-$42.00",
+      footerLabel: "Recent Activity",
+    },
+
+    {
+      icon: Landmark,
+      name: "Chase Sapphire Checking",
+      amount: "$84,120.50",
+      badge: "ACTIVE",
+      badgeColor: "text-green-500",
+      footerLeft: "APY",
+      footerRight: "0.01%",
+      footerLabel: "APY",
+    },
+
+    {
+      icon: CreditCard,
+      name: "Amex Gold",
+      amount: "$3,450.12",
+      badge: "DUE IN 4D",
+      badgeColor: "text-orange-500",
+      footerLeft: "Limit $20,000",
+      footerRight: "Aug 15",
+      footerLabel: "Limit",
+    },
+
+    {
+      icon: Smartphone,
+      name: "JazzCash / Easypaisa",
+      amount: "$4,040.00",
+      badge: "DIGITAL",
+      badgeColor: "text-green-500",
+      footerLeft: "$2,100",
+      footerRight: "$1,940",
+      footerLabel: "Split",
+    },
+  ],
+};
+// recent account transactions data
+export const recentAccountTransactionsData = {
+  transactions: [
+    {
+      id: 1,
+      title: "Chase → Cash Wallet",
+      subtitle: "ATM Withdrawal",
+      type: "transfer",
+      icon: ArrowRightLeft,
+      date: "Aug 12, 2023",
+      amount: 500,
+    },
+    {
+      id: 2,
+      title: "Cash → JazzCash",
+      subtitle: "Mobile Top-up",
+      type: "deposit",
+      icon: Wallet,
+      date: "Aug 10, 2023",
+      amount: 120,
+    },
+    {
+      id: 3,
+      title: "Chase → Amex Gold",
+      subtitle: "Bill Payment",
+      type: "payment",
+      icon: CreditCard,
+      date: "Aug 05, 2023",
+      amount: 2100,
+    },
+  ],
+
+  assetAllocation: {
+    liquidity: 64,
+    categories: [
+      { name: "Savings & Bank", value: 58, color: "orange" },
+      { name: "Cash & Digital", value: 12, color: "green" },
+      { name: "Investments", value: 30, color: "purple" },
+    ],
+  },
+};
+// report overview data
+export const reportCardData = {
+  title: "Financial Performance",
+  subtitle: "Detailed analysis of your wealth trajectory for Jan 2024 - Dec 2024",
+  filter: "This Year",
+
+  stats: [
+    {
+      id: 1,
+      title: "Total Income",
+      value: 124500.0,
+      change: "+12%",
+      changeType: "positive",
+      icon: Wallet,
+    },
+    {
+      id: 2,
+      title: "Total Expenses",
+      value: 82340.5,
+      change: "+4%",
+      changeType: "negative",
+      icon: ArrowDownCircle,
+    },
+    {
+      id: 3,
+      title: "Net Savings",
+      value: 42159.5,
+      change: "+28%",
+      changeType: "positive",
+      icon: PiggyBank,
+    },
+    {
+      id: 4,
+      title: "Savings Rate",
+      value: 33.8,
+      suffix: "%",
+      target: "Target: 35%",
+      icon: Percent,
+    },
+  ],
+};
+// report analysis section data
+export const reportInsightsData = {
+  chart: {
+    title: "Income vs Expenses",
+    subtitle: "Monthly trend analysis",
+    data: [
+      { month: "Jan", income: 4000, expenses: 2400 },
+      { month: "Feb", income: 4200, expenses: 2600 },
+      { month: "Mar", income: 3800, expenses: 2200 },
+      { month: "Apr", income: 5000, expenses: 3000 },
+      { month: "May", income: 4700, expenses: 2800 },
+      { month: "Jun", income: 5200, expenses: 3100 },
+    ],
+    icon: TrendingUp,
+  },
+
+  aiInsights: {
+    title: "AI Monthly Analysis",
+    icon: Brain,
+
+    milestone: {
+      title: "Milestone Reached",
+      description:
+        "You've maintained a 30%+ savings rate for 3 consecutive months. Excellent discipline!",
+      icon: CheckCircle2,
+    },
+
+    recommendations: [
+      {
+        id: 1,
+        text: "Subscription audit: You have 3 inactive services costing you $45/mo.",
+        icon: AlertCircle,
+      },
+      {
+        id: 2,
+        text: "Reinvest surplus: Your current cash balance could yield 4.5% in a HYSA.",
+        icon: DollarSign,
+      },
+    ],
+
+    buttonText: "Generate Full Report",
+  },
 };

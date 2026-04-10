@@ -1,5 +1,4 @@
-import React from "react";
-import { pricingFAQSection } from "../../data/data";
+import { pricingFAQSection } from "../../data";
 
 const PricingFAQSection = () => {
     return <div className="py-20 bg-gradient-to-b from-gray-50 to-white">

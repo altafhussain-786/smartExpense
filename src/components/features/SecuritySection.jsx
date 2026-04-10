@@ -1,4 +1,4 @@
-import { securityCard, securitySection } from "../../data/data"
+import { securityCard, securitySection } from "../../data"
 
 const SecuritySection = () => {
     return (

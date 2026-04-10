@@ -1,4 +1,4 @@
-import { multiAccountSyncSection, multiAccountSyncSectionCard } from "../../data/data";
+import { multiAccountSyncSection, multiAccountSyncSectionCard } from "../../data";
 
 const MultiAccountSyncSection = () => {
     return <div className="w-full bg-[#f8f6f6] py-20 px-6">

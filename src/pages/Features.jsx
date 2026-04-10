@@ -1,5 +1,5 @@
 import CallToAction from "../components/features/CallToAction"
-import FinancialDashboard from "../components/features/FinancialDashboard"
+import FinancialHero from "../components/features/FinancialHero"
 import Hero from "../components/features/Hero"
 import PoweredByAIInsights from "../components/features/PoweredByAIInsights"
 import ProgressFeature from "../components/features/ProgressFeature"
@@ -12,7 +12,7 @@ const Features = () => {
       <Hero />
       <VoiceToTransaction />
       <PoweredByAIInsights />
-      <FinancialDashboard />
+      <FinancialHero />
       <SecuritySection />
       <ProgressFeature />
       <CallToAction />

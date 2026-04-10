@@ -1,6 +1,6 @@
 
 import voiceTransaction from "../../assets/images/voice-to-transaction.png"
-import { voiceToTransaction } from '../../data/data'
+import { voiceToTransaction } from '../../data'
 
 const VoiceToTransaction = () => {
   const MainIcon = voiceToTransaction.mainIcon

@@ -1,4 +1,4 @@
-import { budgetCardData } from "../../../data/data";
+import { budgetCardData } from "../../../data";
 
 const BudgetCard = () => {
     const PeriodIcon = budgetCardData.headerActions.period.icon;
