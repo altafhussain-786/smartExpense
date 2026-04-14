@@ -1,3 +1,4 @@
+import CircleIcon from "../../../assets/icon/CircleIcon";
 import TrendAnalyticsVave from "../../../assets/icon/TrendAnalyticsVave";
 import { analyticsData } from "../../../data";
 
@@ -20,6 +21,7 @@ const FinancialAnalytics = () => {
                 </span>
             </div>
             <div className="w-full h-64 relative">
+
                 <TrendAnalyticsVave/>
                 <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 text-xs text-gray-400 font-medium">
                     <span>JAN</span>
@@ -43,38 +45,7 @@ const FinancialAnalytics = () => {
             </div>
             <div className="flex justify-center mb-6">
                 <div className="relative w-40 h-40">
-
-                    <svg viewBox="0 0 120 120" className="w-full h-full rotate-[-90deg]">
-                        <circle
-                            cx="60"
-                            cy="60"
-                            r="45"
-                            stroke="#e5e7eb"
-                            strokeWidth="12"
-                            fill="none"
-                        />
-                        <circle
-                            cx="60"
-                            cy="60"
-                            r="45"
-                            stroke="#f97316"
-                            strokeWidth="12"
-                            fill="none"
-                            strokeDasharray="127 283"
-                            strokeLinecap="round"
-                        />
-                        <circle
-                            cx="60"
-                            cy="60"
-                            r="45"
-                            stroke="#10b981"
-                            strokeWidth="12"
-                            fill="none"
-                            strokeDasharray="70 283"
-                            strokeDashoffset="-135"
-                            strokeLinecap="round"
-                        />
-                    </svg>
+                    <CircleIcon/>
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
                         <h3 className="text-2xl font-bold">$3,120</h3>
                         <p className="text-xs text-gray-500">TOTAL SPENT</p>

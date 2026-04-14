@@ -21,6 +21,7 @@ const TrendAnalyticsVave = () => {
                 strokeLinecap="round"
             />
         </svg>
+        
     </div>;
 };
 

@@ -12,6 +12,8 @@ import BudgetOverview from "./pages/BudgetOverview"
 import DashboardAiInsights from "./pages/DashboardAiInsights"
 import AccountOverview from "./pages/AccountOverview"
 import ReportsOverview from "./pages/ReportsOverview"
+import LoginPage from "./pages/LoginPage"
+import SignupPage from "./pages/SignupPage"
 const App = () => {
   return (
     <>
@@ -24,13 +26,15 @@ const App = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/ai-insights" element={<AIInsights />} />
           </Route>
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<DashboardLayout />}>
             <Route path="dashboard" element={<MainDashboard />} />
             <Route path="dashboard/transactions" element={<TransactionsOverview />} />
             <Route path="dashboard/budget" element={<BudgetOverview />} />
-            <Route path="dashboard/aiInsights" element={<DashboardAiInsights/>} />
-            <Route path="dashboard/account" element={<AccountOverview/>} />
-            <Route path="dashboard/reports" element={<ReportsOverview/>} />
+            <Route path="dashboard/aiInsights" element={<DashboardAiInsights />} />
+            <Route path="dashboard/account" element={<AccountOverview />} />
+            <Route path="dashboard/reports" element={<ReportsOverview />} />
           </Route>
         </Routes>
       </Router>

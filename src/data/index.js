@@ -1,4 +1,5 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2, ShoppingCart, Home, Lightbulb, PlusCircle, ArrowRightLeft, AlertCircle, Smartphone, ArrowDownLeft, Save, ArrowDownCircle, Percent, BanIcon, DollarSign, CheckCircle, Brain } from "lucide-react";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2, ShoppingCart, Home, Lightbulb, PlusCircle, ArrowRightLeft, AlertCircle, Smartphone, ArrowDownLeft, Save, ArrowDownCircle, Percent, BanIcon, DollarSign, CheckCircle, Brain, Laptop, Fuel, Mail, User, Linkedin, Chrome } from "lucide-react";
+import { Global } from "recharts";
 
 export const navLinks = [
   { name: "Features", link: "/features" },
@@ -1090,5 +1091,237 @@ export const reportInsightsData = {
     ],
 
     buttonText: "Generate Full Report",
+  },
+};
+// Spending Breakdown data
+export const spendingBreakdownData = {
+  merchants: [
+    {
+      id: 1,
+      name: "Whole Foods",
+      icon: ShoppingCart,
+      category: "Groceries",
+      transactions: 24,
+      amount: 3420.12,
+      categoryColor: "bg-green-100 text-green-700",
+    },
+    {
+      id: 2,
+      name: "Amazon Web Services",
+      icon: Laptop,
+      category: "Software",
+      transactions: 12,
+      amount: 1280.0,
+      categoryColor: "bg-blue-100 text-blue-700",
+    },
+    {
+      id: 3,
+      name: "Shell Petroleum",
+      icon: Fuel,
+      category: "Transport",
+      transactions: 18,
+      amount: 945.5,
+      categoryColor: "bg-orange-100 text-orange-700",
+    },
+  ],
+   categoryDistribution: {
+    total: "82.3k",
+    categories: [
+      { name: "Housing", percentage: 45, color: "#2563eb" },
+      { name: "Food & Dining", percentage: 25, color: "#34d399" },
+      { name: "Transport", percentage: 15, color: "#ea580c" },
+      { name: "Utilities & Misc", percentage: 15, color: "#9ca3af" },
+    ],
+  },
+};
+//  signup data
+export const signupData = {
+  header: {
+    logo: "FluidAI",
+    rightText: "Already have an account?",
+    actionText: "Log In",
+    actionLink: "/login"
+  },
+  leftPanel: {
+    badge: "SMART AI RECOGNITION",
+    heading: {
+      normal: "Financial management",
+      highlight: "reimagined."
+    },
+    description:
+      "Join 50,000+ professionals using SmartExpense to automate their accounting and maximize their tax returns.",
+    backgroundOverlay: true,
+    statsCard: {
+      title: "Monthly Inflow",
+      updated: "Updated 2 mins ago",
+      amount: {
+        value: 12450,
+        currency: "$",
+        decimals: 2
+      },
+      growth: {
+        value: 12.5,
+        type: "increase",
+        label: "vs last month"
+      },
+      progress: {
+        current: 83,
+        total: 100,
+        labelLeft: "Budget: $15,000",
+        labelRight: "83% Utilized"
+      }
+    }
+  },
+  rightPanel: {
+    form: {
+      title: "Create your account",
+      subtitle: "Start your 30-day free trial today.",
+      fields: [
+        {
+          id: "fullName",
+          label: "Full Name",
+          type: "text",
+          placeholder: "John Doe",
+          icon: User,
+          required: true
+        },
+        {
+          id: "email",
+          label: "Email Address",
+          type: "email",
+          placeholder: "name@company.com",
+          icon: Mail,
+          required: true
+        },
+        {
+          id: "password",
+          label: "Password",
+          type: "password",
+          placeholder: "••••••••",
+          icon: Lock,
+          required: true,
+          hint: "Must be at least 8 characters with a symbol."
+        }
+      ],
+      checkbox: {
+        text: "I agree to the Terms of Service and Privacy Policy.",
+        required: true
+      },
+      submitButton: {
+        text: "Create Account",
+        loadingText: "Creating..."
+      },
+      divider: "OR REGISTER WITH",
+      socialButtons: [
+        {
+          name: "Google",
+          icon:Chrome ,
+          action: "googleAuth"
+        },
+        {
+          name: "LinkedIn",
+          icon: Linkedin ,
+          action: "linkedinAuth"
+        }
+      ]
+    }
+  },
+  theme: {
+    primary: "#F97316",
+    secondary: "#22C55E", 
+    background: "#F9FAFB",
+    textDark: "#111827",
+    textLight: "#6B7280"
+  }
+};
+// login data 
+export const logInData = {
+  header: {
+    logo: "FinanceFlow",
+    rightText: "Don't have an account?",
+    actionText: "Sign up",
+    actionLink: "/signup",
+  },
+
+  leftPanel: {
+    badge: "Welcome Back",
+    heading: {
+      normal: "Manage your",
+      highlight: "finances smarter",
+    },
+    description:
+      "Track expenses, monitor budgets, and gain AI-powered insights to grow your financial future.",
+    statsCard: {
+      title: "Total Balance",
+      updated: "Updated just now",
+      amount: {
+        currency: "$",
+        value: "12,450",
+        decimals: ".00",
+      },
+      growth: {
+        value: "+12%",
+        type: "increase",
+        label: "this month",
+      },
+      progress: {
+        current: 70,
+        total: 100,
+        labelLeft: "Spent",
+        labelRight: "Budget",
+      },
+    },
+  },
+  rightPanel: {
+    form: {
+      title: "Welcome back",
+      subtitle: "Login to continue managing your finances",
+      fields: [
+        {
+          label: "Email",
+          type: "email",
+          placeholder: "Enter your email",
+          required: true,
+          icon: Mail,  
+          hint: "",
+        },
+        {
+          label: "Password",
+          type: "password",
+          placeholder: "Enter your password",
+          required: true,
+          icon: Lock,
+          hint: "Must be at least 8 characters",
+        },
+      ],
+      checkbox: {
+        text: "Remember me",
+        required: false,
+      },
+      submitButton: {
+        text: "Login",
+        loadingText: "Logging in...",
+      },
+      divider: "Or continue with",
+      socialButtons: [
+        {
+          name: "Google",
+          action: "Login",
+          icon: null,
+        },
+        {
+          name: "GitHub",
+          action: "Login",
+          icon: null,
+        },
+      ],
+    },
+  },
+  theme: {
+    primary: "orange-500",
+    secondary: "green-300",
+    background: "gray-100",
+    textDark: "gray-800",
+    textLight: "gray-500",
   },
 };
