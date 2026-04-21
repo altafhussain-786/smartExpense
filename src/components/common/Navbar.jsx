@@ -57,9 +57,7 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-
           <hr />
-
           <button className="block w-full text-left hover:text-orange-600">
             Login
           </button>

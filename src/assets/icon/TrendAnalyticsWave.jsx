@@ -1,4 +1,4 @@
-const TrendAnalyticsVave = () => {
+const TrendAnalyticsWave = () => {
     return <div className="w-full h-64 relative">
         <svg viewBox="0 0 600 220" className="w-full h-full">
             <path
@@ -25,4 +25,4 @@ const TrendAnalyticsVave = () => {
     </div>;
 };
 
-export default TrendAnalyticsVave;
+export default TrendAnalyticsWave;

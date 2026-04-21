@@ -14,27 +14,37 @@ import AccountOverview from "./pages/AccountOverview"
 import ReportsOverview from "./pages/ReportsOverview"
 import LoginPage from "./pages/LoginPage"
 import SignupPage from "./pages/SignupPage"
+import GetStartedPage from "./pages/GetStartedPage"
+import PublicRoute from "./components/publicRoute/PublicRoute"
+import ProtectedRoute from "./components/protectedRoute/ProtectedRoute"
 const App = () => {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/features" element={<Features />} />
-            <Route path="/howitwork" element={<HowItWork />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/ai-insights" element={<AIInsights />} />
+          <Route element={<PublicRoute />}>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
           </Route>
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/" element={<DashboardLayout />}>
-            <Route path="dashboard" element={<MainDashboard />} />
-            <Route path="dashboard/transactions" element={<TransactionsOverview />} />
-            <Route path="dashboard/budget" element={<BudgetOverview />} />
-            <Route path="dashboard/aiInsights" element={<DashboardAiInsights />} />
-            <Route path="dashboard/account" element={<AccountOverview />} />
-            <Route path="dashboard/reports" element={<ReportsOverview />} />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<LandingPage />} />
+            <Route path="features" element={<Features />} />
+            <Route path="how-it-work" element={<HowItWork />} />
+            <Route path="pricing" element={<Pricing />} />
+            <Route path="ai-insights" element={<AIInsights />} />
+          </Route>
+
+          <Route path="/get-started" element={<GetStartedPage />} />
+
+          <Route element={<ProtectedRoute />}>
+            <Route path="/dashboard" element={<DashboardLayout />}>
+              <Route index element={<MainDashboard />} />
+              <Route path="transactions" element={<TransactionsOverview />} />
+              <Route path="budget" element={<BudgetOverview />} />
+              <Route path="ai-insights" element={<DashboardAiInsights />} />
+              <Route path="account" element={<AccountOverview />} />
+              <Route path="reports" element={<ReportsOverview />} />
+            </Route>
           </Route>
         </Routes>
       </Router>

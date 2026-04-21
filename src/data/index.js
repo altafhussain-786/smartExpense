@@ -1,9 +1,9 @@
-import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, icons, Cloud, BrainCircuit, Database, Subtitles, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Wallet2Icon, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2, ShoppingCart, Home, Lightbulb, PlusCircle, ArrowRightLeft, AlertCircle, Smartphone, ArrowDownLeft, Save, ArrowDownCircle, Percent, BanIcon, DollarSign, CheckCircle, Brain, Laptop, Fuel, Mail, User, Linkedin, Chrome } from "lucide-react";
-import { Global } from "recharts";
+import { ChartNoAxesCombined, ClipboardClock, EarthLock, Link, Landmark, Mic, Sparkles, Target, CheckCircle2, TrendingUp, BellRing, Wallet, Shield, Lock, KeyRound, ShieldCheck, Flame, Award, Medal, Braces, Network, GitBranch, Banknote, CreditCard, Cloud, BrainCircuit, Database, AlertTriangle, PiggyBank, Trophy, BriefcaseBusiness, Play, LayoutDashboard, ArrowLeftRight, BarChart3, Settings, Search, Bell, TrendingDown, ShoppingBag, Utensils, Wallet2, Receipt, Calendar, RefreshCcw, Download, Plus, Coffee, Car, Monitor, Eye, Pencil, Trash2, ShoppingCart, Home, Lightbulb, PlusCircle, ArrowRightLeft, AlertCircle, Smartphone,  ArrowDownCircle, Percent, DollarSign,  Brain, Laptop, Fuel, Mail, User, Linkedin, Chrome, Rocket, Github } from "lucide-react";
+
 
 export const navLinks = [
   { name: "Features", link: "/features" },
-  { name: "How It Works", link: "/howitwork" },
+  { name: "How It Works", link: "/how-it-work" },
   { name: "Pricing", link: "/pricing" },
   { name: "AI Insights", link: "/ai-insights" },
 ];
@@ -173,7 +173,6 @@ export const financialContent = [
   }
 ]
 // Security Section data
-
 export const securitySection = [
   {
     icon: Shield,
@@ -200,7 +199,6 @@ export const securityCard = [
   }
 ]
 // Progress feature data 
-
 export const progressFeatures = {
   mainTitle: "Build Habits, Not Just Budgets.",
   mainDescription: "Gamified saving makes financial discipline fun. Track your streaks, earn badges, and level up your financial health.",
@@ -227,7 +225,6 @@ export const progressCard = {
   streak: "Day Streak"
 }
 // call to action data
-
 export const callToAction = [
   {
     title: "Ready to take control?",
@@ -285,7 +282,6 @@ export const multiAccountSyncSection = {
   description: "SmartExpense securely connects to over 10,000 financial institutions worldwide. Whether it's traditional bank accounts or digital wallets like Apple Pay and PayPal, we keep everything in sync.",
   icons: [Banknote, CreditCard, Landmark, Wallet]
 }
-
 export const multiAccountSyncSectionCard = [
   {
     title: "Security Level",
@@ -387,7 +383,6 @@ export const pricingCard = [
   },
 ]
 // pricing FAQ data
-
 export const pricingFAQSection = {
   mainTitle: "Frequently Asked Questions",
   features: [
@@ -426,7 +421,6 @@ export const ctaSction = [
   }
 ]
 //AI Insights section data 
-
 export const aiInsightsSection = {
   mainTitle: "AI Smart Insights",
   subtitle: "Data-driven financial forecasting and personalized tips",
@@ -505,7 +499,6 @@ export const sidebarData = [
     title: "Dashboard",
     icon: LayoutDashboard,
     path: "/dashboard",
-    active: true,
   },
   {
     title: "Transactions",
@@ -530,10 +523,9 @@ export const sidebarData = [
   {
     title: "AI Insights",
     icon: Sparkles,
-    path: "/dashboard/aiInsights",
+    path: "/dashboard/ai-insights",
   },
 ];
-
 export const bottomMenu = [
   {
     title: "Settings",
@@ -562,35 +554,43 @@ export const dashboardNavbarData = {
 };
 // main dashboard data
 export const statsData = [
-  {
-    title: "Total Balance",
-    amount: "$12,450.00",
-    change: "+2.4%",
-    icon: Wallet,
-    color: "orange",
-  },
-  {
-    title: "Monthly Income",
-    amount: "$5,200.00",
-    change: "+8.1%",
-    icon: TrendingUp,
-    color: "green",
-  },
-  {
-    title: "Monthly Expense",
-    amount: "$3,120.00",
-    change: "-5.1%",
-    icon: TrendingDown,
-    color: "red",
-  },
-  {
-    title: "Savings Progress",
-    amount: "65%",
-    change: "Target",
-    icon: Target,
-    color: "orange",
-  },
-];
+    {
+        title: "Total Balance",
+        amount: null,
+        change: null,
+        icon: Wallet,
+        color: "orange",
+        progress: null,
+        backendKey: "totalBalance",
+    },
+    {
+        title: "Monthly Income",
+        amount: null,
+        change: null,
+        icon: TrendingUp,
+        color: "green",
+        progress: null,
+        backendKey: "monthlyIncome",
+    },
+    {
+        title: "Monthly Expense",
+        amount: null,
+        change: null,
+        icon: TrendingDown,
+        color: "red",
+        progress: null,
+        backendKey: "monthlyExpense",
+    },
+    {
+        title: "Savings Progress",
+        amount: null,
+        change: null,
+        icon: Target,
+        color: "orange",
+        progress: null,
+        backendKey: "savingsProgress",
+    },
+]
 // financial analytics data
 export const analyticsData = {
   monthlyTrend: [
@@ -1124,7 +1124,7 @@ export const spendingBreakdownData = {
       categoryColor: "bg-orange-100 text-orange-700",
     },
   ],
-   categoryDistribution: {
+  categoryDistribution: {
     total: "82.3k",
     categories: [
       { name: "Housing", percentage: 45, color: "#2563eb" },
@@ -1137,112 +1137,109 @@ export const spendingBreakdownData = {
 //  signup data
 export const signupData = {
   header: {
-    logo: "FluidAI",
+    logo: "The Fluid Architect",
     rightText: "Already have an account?",
     actionText: "Log In",
-    actionLink: "/login"
+    actionLink: "/login",
   },
+
   leftPanel: {
     badge: "SMART AI RECOGNITION",
     heading: {
       normal: "Financial management",
-      highlight: "reimagined."
+      highlight: "reimagined.",
     },
     description:
-      "Join 50,000+ professionals using SmartExpense to automate their accounting and maximize their tax returns.",
-    backgroundOverlay: true,
+      "Join 500k+ professionals using SmartExpense to automate their accounting and reclaim their time for what truly matters.",
     statsCard: {
       title: "Monthly Inflow",
-      updated: "Updated 2 mins ago",
+      updated: "Oct 2023",
       amount: {
-        value: 12450,
         currency: "$",
-        decimals: 2
+        value: 12450,
       },
       growth: {
-        value: 12.5,
-        type: "increase",
-        label: "vs last month"
+        value: "+12.5%",
+        label: "vs last month",
       },
       progress: {
-        current: 83,
+        current: 78,
         total: 100,
-        labelLeft: "Budget: $15,000",
-        labelRight: "83% Utilized"
-      }
-    }
+        labelLeft: "78% of target reached",
+        labelRight: "$15,000",
+      },
+    },
   },
+
   rightPanel: {
     form: {
       title: "Create your account",
       subtitle: "Start your 30-day free trial today.",
       fields: [
         {
-          id: "fullName",
+          name: "name",
           label: "Full Name",
           type: "text",
           placeholder: "John Doe",
+          required: true,
           icon: User,
-          required: true
         },
         {
-          id: "email",
+          name: "email",
           label: "Email Address",
           type: "email",
           placeholder: "name@company.com",
+          required: true,
           icon: Mail,
-          required: true
         },
         {
-          id: "password",
+          name: "password",
           label: "Password",
           type: "password",
           placeholder: "••••••••",
-          icon: Lock,
           required: true,
-          hint: "Must be at least 8 characters with a symbol."
-        }
+          icon: Lock,
+          hint: "Must be at least 8 characters",
+        },
       ],
       checkbox: {
         text: "I agree to the Terms of Service and Privacy Policy.",
-        required: true
+        required: true,
       },
       submitButton: {
         text: "Create Account",
-        loadingText: "Creating..."
+        loadingText: "Creating Account...",
       },
-      divider: "OR REGISTER WITH",
+      divider: "Or register with",
       socialButtons: [
         {
           name: "Google",
-          icon:Chrome ,
-          action: "googleAuth"
+          icon: Chrome,
+          action: "googleAuth",
         },
         {
           name: "LinkedIn",
-          icon: Linkedin ,
-          action: "linkedinAuth"
-        }
-      ]
-    }
+          icon: Linkedin,
+          action: "linkedinAuth",
+        },
+      ],
+      footerNote: "Secure 256-bit SSL encrypted connection. Your data is always protected.",
+      bottomLink: {
+        text: "Already have an account?",
+        actionText: "Log In",
+        actionLink: "/login",
+      },
+    },
   },
-  theme: {
-    primary: "#F97316",
-    secondary: "#22C55E", 
-    background: "#F9FAFB",
-    textDark: "#111827",
-    textLight: "#6B7280"
-  }
-};
+}
 // login data 
 export const logInData = {
   header: {
-    logo: "FinanceFlow",
+    logo: "SmartExpense",
     rightText: "Don't have an account?",
     actionText: "Sign up",
     actionLink: "/signup",
   },
-
   leftPanel: {
     badge: "Welcome Back",
     heading: {
@@ -1252,76 +1249,121 @@ export const logInData = {
     description:
       "Track expenses, monitor budgets, and gain AI-powered insights to grow your financial future.",
     statsCard: {
-      title: "Total Balance",
-      updated: "Updated just now",
+      title: "Monthly Inflow",
+      updated: "Updated 2 mins ago",
+      icon: TrendingUp,
       amount: {
         currency: "$",
-        value: "12,450",
-        decimals: ".00",
+        value: "12,450.00",
       },
       growth: {
-        value: "+12%",
-        type: "increase",
-        label: "this month",
+        value: "+12.5%",
+        label: "vs last month",
       },
       progress: {
-        current: 70,
+        current: 78,
         total: 100,
-        labelLeft: "Spent",
-        labelRight: "Budget",
+        labelLeft: "78% OF TARGET",
+        labelRight: "$15,000.00",
+      },
+    },
+    testimonial: {
+      badge: "Bank-Grade Security",
+      quote:
+        "The precision in tracking my digital assets has changed how I view my financial future.",
+        icon: Lock,
+      author: {
+        name: "Alex Rivera",
+        role: "Chief Investment Officer",
+        initials: "AR",
       },
     },
   },
   rightPanel: {
     form: {
       title: "Welcome back",
-      subtitle: "Login to continue managing your finances",
+      subtitle: "Log in to your account to manage your finances.",
       fields: [
         {
-          label: "Email",
+          name: "email",
+          label: "Email Address",
           type: "email",
-          placeholder: "Enter your email",
+          placeholder: "name@company.com",
           required: true,
-          icon: Mail,  
-          hint: "",
+          icon: Mail,
         },
         {
+          name: "password",
           label: "Password",
           type: "password",
-          placeholder: "Enter your password",
+          placeholder: "••••••••",
           required: true,
           icon: Lock,
-          hint: "Must be at least 8 characters",
+          hint: "",
         },
       ],
       checkbox: {
-        text: "Remember me",
+        text: "Keep me logged in",
         required: false,
       },
+      forgotPassword: {
+        text: "Forgot password?",
+        link: "/forgot-password",
+      },
       submitButton: {
-        text: "Login",
+        text: "Sign In",
         loadingText: "Logging in...",
       },
-      divider: "Or continue with",
+      divider: "OR CONTINUE WITH",
       socialButtons: [
         {
           name: "Google",
-          action: "Login",
-          icon: null,
+          icon: Chrome,
+          action: "googleAuth",
         },
         {
           name: "GitHub",
-          action: "Login",
-          icon: null,
+          icon: Github,
+          action: "githubAuth",
         },
       ],
+      bottomLink: {
+        text: "Don't have an account?",
+        actionText: "Create an account",
+        actionLink: "/signup",
+      },
     },
   },
-  theme: {
-    primary: "orange-500",
-    secondary: "green-300",
-    background: "gray-100",
-    textDark: "gray-800",
-    textLight: "gray-500",
+}
+// get started data
+export const onboardingStep1 = {
+  step: "Step 1 of 3",
+  title: "Welcome to SmartExpense",
+  icon: Rocket,
+  subtitle:
+    "We're excited to help you master your finances. Let's start by setting up your digital vault.",
+
+  features: [
+    {
+      id: 1,
+      title: "Secure Connection",
+      description: "Bank-grade encryption for all your accounts.",
+      icon: Shield,
+    },
+    {
+      id: 2,
+      title: "Smart Insights",
+      description: "AI-powered categorization of every spend.",
+      icon: BarChart3,
+    },
+  ],
+
+  image: {
+    quote: "The first step to wealth is tracking where it goes.",
+  },
+
+  actions: {
+    primary: "Get Started",
+    secondary: "Skip for now",
   },
 };

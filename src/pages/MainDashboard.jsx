@@ -1,13 +1,12 @@
-import FinancialAnalytics from "../components/dashboard/mainDashborad/FinancialAnalytics";
-import RecentTransactions from "../components/dashboard/mainDashborad/RecentTransactions";
-import StatusCard from "../components/dashboard/mainDashborad/StatusCard";
-
+import FinancialAnalytics from "../components/dashboard/mainDashboard/FinancialAnalytics";
+import RecentTransactions from "../components/dashboard/mainDashboard/RecentTransactions";
+import StatusCard from "../components/dashboard/mainDashboard/StatusCard";
 
 const MainDashboard = () => {
   return <>
-  <StatusCard/>
-  <FinancialAnalytics/>
-  <RecentTransactions/>
+    <StatusCard />
+    <FinancialAnalytics />
+    <RecentTransactions />
   </>;
 };
 
